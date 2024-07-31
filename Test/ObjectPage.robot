@@ -4,6 +4,8 @@ Library    SeleniumLibrary
 Resource    ../Ressources/Keyword/common.robot
 Resource    ../Ressources/Keyword/Authentification.robot
 Resource    ../Ressources/Keyword/AddUser.robot
+Resource    ../Ressources/Keyword/SearchUser.robot
+Resource    ../Ressources/Keyword/DeleteUser.robot
 
 *** Variables ***
 *** Keywords ***
@@ -42,3 +44,26 @@ tc5:Successful AddUser
     OpenPage
     Successful login with valid credentials
     Successuful AddUser
+
+Tc6:SearchByUsername
+    [Documentation]    Search on User by Username
+    [Tags]    critical_6
+    OpenPage
+    Successful login with valid credentials
+    SearchByUsername
+    Close Browser
+
+Tc7:SearchByUserRole
+    [Documentation]    Search on User by user role
+    [Tags]    critical_7
+    OpenPage
+    Successful login with valid credentials
+    SearchByUserRole
+    Close Browser
+Tc8:DeleteUser
+    [Documentation]    Delete User 
+    [Tags]    critical_8
+    OpenPage
+    Successful login with valid credentials
+    DeleteUser
+    Close Browser

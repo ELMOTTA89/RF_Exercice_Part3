@@ -26,5 +26,7 @@ Scenario: Unsuccess login with empty credentials
     Given   the user is on login page
     When the user click on login button 
     Then the user should displayed en error message "Invalid credentials"
+
+
     
 
