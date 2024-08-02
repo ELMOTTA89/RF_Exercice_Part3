@@ -10,3 +10,27 @@ ESSA="xpath://*[contains(text(),'ESS')]"
 Trash="xpath://*[@class='oxd-icon bi-trash']"
 YesDelete="xpath://*[@class='oxd-icon bi-trash oxd-button-icon']"
 EditIconeadmin="xpath://*[@class='oxd-icon bi-pencil-fill']"
+
+StatusAdmin="xpath://label[text()='Status']/following::div[@data-v-67d2aedf]"
+SelectEnableAdmin="xpath://*[contains(text(),'Enabled')]"
+SelectDisabledAdmin="xpath://*[contains(text(),'Disabled')]"
+
+VerifyDisabled="xpath://label[text()='Status']/following::div[@data-v-6c07a142][4]"
+
+Editbutton="xpath://*[@class='oxd-icon bi-pencil-fill']"
+
+
+
+
+#Ro=input(str("selection ueer role"))
+#if (RO=="ADMIN"):
+#    clik admin 
+#else :
+#    click ESS
+    
+
+
+#Run Keyword if ${RO} == "Admin"     click element   ${locatorsRO}
+
+#Run Keyword If    '${ro}' == 'Admin'    Click Element    ${Admina}
+#    ...               ELSE    Click Element    ${ESS}

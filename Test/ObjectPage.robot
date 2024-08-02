@@ -6,6 +6,7 @@ Resource    ../Ressources/Keyword/Authentification.robot
 Resource    ../Ressources/Keyword/AddUser.robot
 Resource    ../Ressources/Keyword/SearchUser.robot
 Resource    ../Ressources/Keyword/DeleteUser.robot
+Resource    ../Ressources/Keyword/Update.robot
 
 *** Variables ***
 *** Keywords ***
@@ -47,7 +48,7 @@ tc5:Successful AddUser
 
 Tc6:SearchByUsername
     [Documentation]    Search on User by Username
-    [Tags]    critical_6
+    [Tags]    crtical_6
     OpenPage
     Successful login with valid credentials
     SearchByUsername
@@ -67,3 +68,19 @@ Tc8:DeleteUser
     Successful login with valid credentials
     DeleteUser
     Close Browser
+
+tc9:SearchByStatus
+    [Documentation]    search by status
+    [Tags]   critical_9
+    OpenPage
+    Successful login with valid credentials
+    SearchByStatus
+    Close Browser 
+
+TC10:UpdateUser
+    [Documentation]    Update user
+    [Tags]    critical_10
+    OpenPage
+    Successful login with valid credentials
+    UpdateUser
+    
